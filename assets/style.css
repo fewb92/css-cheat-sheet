@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #ffa500;
+    --color-background: #4b4f54;
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 125%;
+    font-weight: normal;
+    background-color: var(--color-background);
+    color: white;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary)
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+} 
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.card-wrapper {
+    border: dashed 1px white;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+.card-title {
+    position: relative;
+    margin-top: -55px;
+    border: solid 1px white;
+    background-color: var(--color-background);
+    padding-left: 10px;
+}
+
+.box-content p {
+    color:var(--color-primary);
+}
+
+.inner-card {
+    background-image: linear-gradient(
+        rgba(255, 165, 0, 0.6) 0%,
+        rgba(255, 165, 0, 1) 100%
+    );
+    padding-left: 10px;
+}
+
+.card-title, .card-wrapper {
+    border-radius: 8px;
+} 
+
+.card-wrapper:hover,
+.card-wrapper:hover .card-title:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 1);
+}
+
+.footer {
+    margin: 0 auto;
+    text-align: center;
+}
